@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Page de Test</title>
+    <style>
+        /* Design System Simple et Moderne */
+        :root {
+            --primary-color: #4f46e5;
+            --bg-color: #f9fafb;
+            --text-color: #111827;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            max-width: 450px;
+            width: 90%;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.875rem;
+        }
+
+        p {
+            color: #4b5563;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: background-color 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #4338ca;
+        }
+
+        .status {
+            margin-top: 1.5rem;
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
+
+        #message-box {
+            display: none;
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #ecfdf5;
+            color: #065f46;
+            border-radius: 6px;
+            border: 1px solid #a7f3d0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Page de Test</h1>
+        <p>Ceci est une structure HTML simple avec un style minimaliste pour tester votre affichage.</p>
+        
+        <button class="btn" onclick="showMessage()">Cliquez ici</button>
+
+        <div id="message-box">
+            Le test fonctionne parfaitement !
+        </div>
+
+        <div class="status">
+            Version 1.0 • Design Adaptatif
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            const box = document.getElementById('message-box');
+            box.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
